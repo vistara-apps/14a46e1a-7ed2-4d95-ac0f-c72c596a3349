@@ -1,0 +1,14 @@
+{
+  "name": "KnowYourRightsAI",
+  "description": "KnowYourRightsAI is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://14a46e1a-7ed2-4d95-ac0f-c72c596a3349.vercel.app",
+  "properties": {
+    "app": {
+      "name": "KnowYourRightsAI",
+      "description": "KnowYourRightsAI is a Base Mini App built with Zara.",
+      "url": "https://14a46e1a-7ed2-4d95-ac0f-c72c596a3349.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
