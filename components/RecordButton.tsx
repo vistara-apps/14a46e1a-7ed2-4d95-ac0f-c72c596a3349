@@ -105,8 +105,8 @@ export function RecordButton({ onRecordingComplete, variant = 'idle' }: RecordBu
         <div className="glass-card p-4 rounded-lg">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-text-primary font-medium">Recording Complete</p>
-              <p className="text-text-secondary text-sm">Duration: {formatDuration(duration)}</p>
+              <p className="text-white font-medium">Recording Complete</p>
+              <p className="text-gray-300 text-sm">Duration: {formatDuration(duration)}</p>
             </div>
             
             <button
@@ -154,15 +154,15 @@ export function RecordButton({ onRecordingComplete, variant = 'idle' }: RecordBu
       
       {isRecording && (
         <div className="space-y-2">
-          <p className="text-text-primary font-medium">Recording...</p>
-          <p className="text-text-secondary text-lg font-mono">
+          <p className="text-white font-medium">Recording...</p>
+          <p className="text-gray-300 text-lg font-mono">
             {formatDuration(duration)}
           </p>
         </div>
       )}
       
       {!isRecording && (
-        <p className="text-text-secondary">
+        <p className="text-gray-300">
           Tap to start secure recording
         </p>
       )}

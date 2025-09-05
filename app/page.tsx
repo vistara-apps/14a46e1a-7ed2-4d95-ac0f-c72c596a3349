@@ -38,7 +38,7 @@ export default function HomePage() {
     const scripts = {
       'traffic-stop': {
         title: 'Traffic Stop Rights Script',
-        content: 'Officer, I understand you've stopped me. I will comply with lawful orders. I am exercising my right to remain silent and would like to speak with an attorney. I do not consent to any searches.',
+        content: "Officer, I understand you've stopped me. I will comply with lawful orders. I am exercising my right to remain silent and would like to speak with an attorney. I do not consent to any searches.",
         doSay: [
           '"I am exercising my right to remain silent"',
           '"I would like to speak with an attorney"',
@@ -46,10 +46,10 @@ export default function HomePage() {
           '"Am I free to go?"'
         ],
         dontSay: [
-          'Don\'t volunteer information about where you\'re going',
-          'Don\'t admit to any violations',
-          'Don\'t argue or become confrontational',
-          'Don\'t consent to vehicle searches'
+          "Don't volunteer information about where you're going",
+          "Don't admit to any violations",
+          "Don't argue or become confrontational",
+          "Don't consent to vehicle searches"
         ],
         keyPoints: [
           'Keep your hands visible at all times',
@@ -68,14 +68,14 @@ export default function HomePage() {
           '"I would like to speak with an attorney"'
         ],
         dontSay: [
-          'Don\'t provide information about your activities',
-          'Don\'t consent to searches of your person or belongings',
-          'Don\'t run or resist physically',
-          'Don\'t lie or provide false information'
+          "Don't provide information about your activities",
+          "Don't consent to searches of your person or belongings",
+          "Don't run or resist physically",
+          "Don't lie or provide false information"
         ],
         keyPoints: [
-          'You have the right to ask if you\'re free to go',
-          'You don\'t have to answer questions beyond basic identification',
+          "You have the right to ask if you're free to go",
+          "You don't have to answer questions beyond basic identification",
           'Stay calm and keep your hands visible',
           'You can refuse consent to search'
         ]
@@ -130,10 +130,10 @@ export default function HomePage() {
         return (
           <div className="space-y-6">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-text-primary mb-2">
+              <h2 className="text-2xl font-bold text-white mb-2">
                 Secure Recording
               </h2>
-              <p className="text-text-secondary">
+              <p className="text-gray-300">
                 Record audio evidence securely and discreetly
               </p>
             </div>
@@ -160,11 +160,11 @@ export default function HomePage() {
                 Blockchain Dashboard
               </div>
               
-              <h1 className="text-4xl font-bold text-text-primary">
+              <h1 className="text-4xl font-bold text-white">
                 KnowYourRights AI
               </h1>
               
-              <p className="text-text-secondary max-w-md mx-auto">
+              <p className="text-gray-300 max-w-md mx-auto">
                 Your pocket guide to legal rights and police interactions with AI-powered guidance.
               </p>
               
@@ -187,43 +187,43 @@ export default function HomePage() {
             {/* Stats Cards */}
             <div className="grid grid-cols-3 gap-4">
               <div className="metric-card text-center">
-                <div className="text-2xl font-bold text-text-primary">24/7</div>
-                <div className="text-text-secondary text-sm">Available</div>
+                <div className="text-2xl font-bold text-white">24/7</div>
+                <div className="text-gray-300 text-sm">Available</div>
               </div>
               <div className="metric-card text-center">
-                <div className="text-2xl font-bold text-text-primary">50+</div>
-                <div className="text-text-secondary text-sm">States</div>
+                <div className="text-2xl font-bold text-white">50+</div>
+                <div className="text-gray-300 text-sm">States</div>
               </div>
               <div className="metric-card text-center">
-                <div className="text-2xl font-bold text-text-primary">5</div>
-                <div className="text-text-secondary text-sm">Languages</div>
+                <div className="text-2xl font-bold text-white">5</div>
+                <div className="text-gray-300 text-sm">Languages</div>
               </div>
             </div>
 
             {/* Legal Features Chart */}
             <div className="glass-card rounded-lg p-6">
-              <h3 className="text-lg font-semibold text-text-primary mb-4">
+              <h3 className="text-lg font-semibold text-white mb-4">
                 Legal Features
               </h3>
               
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-text-secondary">Script guidance</span>
+                  <span className="text-gray-300">Script guidance</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-20 h-2 bg-gray-700 rounded-full overflow-hidden">
                       <div className="w-4/5 h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
                     </div>
-                    <span className="text-text-primary text-sm">80%</span>
+                    <span className="text-white text-sm">80%</span>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-text-secondary">Script generator</span>
+                  <span className="text-gray-300">Script generator</span>
                   <div className="flex items-center space-x-2">
                     <div className="w-20 h-2 bg-gray-700 rounded-full overflow-hidden">
                       <div className="w-3/5 h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"></div>
                     </div>
-                    <span className="text-text-primary text-sm">60%</span>
+                    <span className="text-white text-sm">60%</span>
                   </div>
                 </div>
               </div>
@@ -245,8 +245,8 @@ export default function HomePage() {
                 onClick={() => setCurrentView('legal-info')}
               >
                 <div className="flex items-center space-x-2 text-sm">
-                  <span className="text-text-secondary">Current location:</span>
-                  <span className="text-accent font-medium">{userLocation}</span>
+                  <span className="text-gray-300">Current location:</span>
+                  <span className="text-green-400 font-medium">{userLocation}</span>
                 </div>
               </FeatureCard>
               
@@ -268,7 +268,7 @@ export default function HomePage() {
               >
                 <div className="flex flex-wrap gap-2 mt-2">
                   {['EN', 'ES', 'FR', 'ZH', 'AR'].map((lang) => (
-                    <span key={lang} className="px-2 py-1 bg-white bg-opacity-10 rounded text-xs text-text-secondary">
+                    <span key={lang} className="px-2 py-1 bg-white bg-opacity-10 rounded text-xs text-gray-300">
                       {lang}
                     </span>
                   ))}
@@ -280,20 +280,20 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="metric-card">
                 <div className="flex items-center space-x-3">
-                  <Shield className="w-8 h-8 text-accent" />
+                  <Shield className="w-8 h-8 text-green-400" />
                   <div>
-                    <div className="text-text-primary font-medium">Protected</div>
-                    <div className="text-text-secondary text-sm">Your rights</div>
+                    <div className="text-white font-medium">Protected</div>
+                    <div className="text-gray-300 text-sm">Your rights</div>
                   </div>
                 </div>
               </div>
               
               <div className="metric-card">
                 <div className="flex items-center space-x-3">
-                  <Clock className="w-8 h-8 text-primary" />
+                  <Clock className="w-8 h-8 text-blue-400" />
                   <div>
-                    <div className="text-text-primary font-medium">Instant</div>
-                    <div className="text-text-secondary text-sm">Response</div>
+                    <div className="text-white font-medium">Instant</div>
+                    <div className="text-gray-300 text-sm">Response</div>
                   </div>
                 </div>
               </div>

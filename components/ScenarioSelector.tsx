@@ -1,6 +1,6 @@
 'use client';
 
-import { Car, User, Search, Handcuffs } from 'lucide-react';
+import { Car, User, Search, Shield } from 'lucide-react';
 import { Scenario } from '@/lib/types';
 import { SCENARIOS } from '@/lib/constants';
 
@@ -12,17 +12,17 @@ const iconMap = {
   car: Car,
   user: User,
   search: Search,
-  handcuffs: Handcuffs
+  handcuffs: Shield
 };
 
 export function ScenarioSelector({ onScenarioSelect }: ScenarioSelectorProps) {
   return (
     <div className="space-y-6">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-text-primary mb-2">
+        <h2 className="text-2xl font-bold text-white mb-2">
           Select Your Situation
         </h2>
-        <p className="text-text-secondary">
+        <p className="text-gray-300">
           Choose the scenario that best matches your current situation
         </p>
       </div>
@@ -43,15 +43,15 @@ export function ScenarioSelector({ onScenarioSelect }: ScenarioSelectorProps) {
                 </div>
                 
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-text-primary mb-1">
+                  <h3 className="text-lg font-semibold text-white mb-1">
                     {scenario.title}
                   </h3>
-                  <p className="text-text-secondary text-sm">
+                  <p className="text-gray-300 text-sm">
                     {scenario.description}
                   </p>
                 </div>
                 
-                <div className="text-text-secondary">
+                <div className="text-gray-300">
                   <span className="text-2xl">→</span>
                 </div>
               </div>
@@ -66,8 +66,8 @@ export function ScenarioSelector({ onScenarioSelect }: ScenarioSelectorProps) {
             <span className="text-white text-sm font-bold">!</span>
           </div>
           <div>
-            <p className="text-text-primary font-medium">Emergency?</p>
-            <p className="text-text-secondary text-sm">
+            <p className="text-white font-medium">Emergency?</p>
+            <p className="text-gray-300 text-sm">
               If you're in immediate danger, call 911 first
             </p>
           </div>

@@ -28,15 +28,15 @@ export function AppShell({ children, currentPage = 'home' }: AppShellProps) {
             <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">KR</span>
             </div>
-            <h1 className="text-xl font-bold text-text-primary">KnowYourRightsAI</h1>
+            <h1 className="text-xl font-bold text-white">KnowYourRightsAI</h1>
           </div>
           
           <div className="flex items-center space-x-2">
             <button className="p-2 glass-card rounded-lg hover:bg-opacity-15 transition-all duration-200">
-              <Home className="w-5 h-5 text-text-secondary" />
+              <Home className="w-5 h-5 text-gray-300" />
             </button>
             <button className="p-2 glass-card rounded-lg hover:bg-opacity-15 transition-all duration-200">
-              <Search className="w-5 h-5 text-text-secondary" />
+              <Search className="w-5 h-5 text-gray-300" />
             </button>
             <button className="btn-primary text-sm px-4 py-2">
               Get Help
@@ -67,7 +67,7 @@ export function AppShell({ children, currentPage = 'home' }: AppShellProps) {
                     className={`flex flex-col items-center space-y-1 p-2 rounded-lg transition-all duration-200 ${
                       isActive 
                         ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white' 
-                        : 'text-text-secondary hover:text-text-primary hover:bg-white hover:bg-opacity-10'
+                        : 'text-gray-300 hover:text-white hover:bg-white hover:bg-opacity-10'
                     }`}
                   >
                     <Icon className="w-5 h-5" />
