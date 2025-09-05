@@ -36,10 +36,10 @@ export function FeatureCard({
         </div>
         
         <div className="flex-1 min-w-0">
-          <h3 className="text-lg font-semibold text-text-primary mb-2">
+          <h3 className="text-lg font-semibold text-white mb-2">
             {title}
           </h3>
-          <p className="text-text-secondary text-sm leading-relaxed">
+          <p className="text-gray-300 text-sm leading-relaxed">
             {description}
           </p>
           
